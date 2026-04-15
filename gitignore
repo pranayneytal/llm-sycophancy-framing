@@ -1,0 +1,10 @@
+.env
+*.pyc
+__pycache__/
+.DS_Store
+results/
+*.csv
+!data/claims_rule_based.csv
+!data/prompts_final.csv
+annotation/batch_*_full.csv
+annotation/annotation_sheet_full_shuffled.csv
