@@ -60,7 +60,7 @@ We introduce the **Framing Style Taxonomy (FST)** — 8 user framing styles grou
 - **Accepted claims:** 319
 - **Framing styles:** 8
 - **Total prompts:** 2,552
-- **Total responses:** 28,072
+- **Total responses:** 30,594
 
 Claims span three categories: factual, opinion, and advice. Filtering was rule-based only (no LLM filtering) to avoid introducing secondary model biases.
 
@@ -85,14 +85,14 @@ Annotators were blinded to model and framing identity (codes M01–M12, F01–F0
 
 ```
 /code/
-  01_filter_claims.py          filter raw Reddit posts to usable claims
-  02_generate_prompts.py       apply 8 framing templates to each claim
-  03_run_experiment.py         run all 12 models via batch + live APIs
-  04_prepare_annotation.py     blind codes, shuffle, split into annotator batches
-  05_iaa_analysis.py           compute Cohen's kappa, generate adjudication sheet
+  filter_claims.ipynb          filter raw Reddit posts to usable claims
+  gen_prompts.ipynb            apply 8 framing templates to each claim
+  model_res_gen.ipynb          run all 12 models via batch + live APIs
+  annotation_sheet.ipynb       blind codes, shuffle, split into annotator batches
+  analysis.ipynb               compute Cohen's kappa, generate adjudication sheet
 
 /data/
-  claims_rule_based.csv        319 accepted claims with correct answers
+  claims_with_answers.csv      319 accepted claims with correct answers
   prompts_final.csv            2,552 prompts (claims × framings)
   decode_key.csv               model and framing blind code lookup
 
@@ -101,7 +101,7 @@ Annotators were blinded to model and framing identity (codes M01–M12, F01–F0
   disagreement_protocol.md     formal disagreement resolution rules
 
 /paper/
-  paper_draft_v4.docx          manuscript draft
+  paper_draft_v1.docx          manuscript draft
 ```
 
 ---
