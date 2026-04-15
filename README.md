@@ -125,11 +125,11 @@ DEEPINFRA_API_KEY=...
 
 Run in order:
 ```bash
-python code/01_filter_claims.py
-python code/02_generate_prompts.py
-python code/03_run_experiment.py
-python code/04_prepare_annotation.py
-python code/05_iaa_analysis.py
+python code/filter_claims.ipynb
+python code/gen_prompts.ipynb
+python code/model_res_gen.ipynb
+python code/annotation_sheet.ipynb
+python code/analysis.ipynb
 ```
 
 ---
